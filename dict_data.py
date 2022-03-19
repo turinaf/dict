@@ -8,7 +8,7 @@
  This file the logic of dictionary behind the GUI.
  GUI is implemented in dict_gui.py file.
 '''
-with open("/home/turi/git/dict/words.txt", 'r', encoding="utf8") as fp:
+with open("words.txt", 'r', encoding="utf8") as fp:
     lines = fp.readlines()
 
 wordlist = []
