@@ -20,17 +20,17 @@ for line in lines:
 # print(wordlist)
 class Dict():
     # dict() prints all the dictionary
-    def dict():
+    def dict(self):
         print("Word   part of Speech\t Chinese meaning")
         for word in wordlist:
             print(word[0], "\t", word[1], "\t", word[2])
             
 
-    def search(self, str):
+    def search(self, strg):
         matched = []
         for item in wordlist:
             word = "".join(item[0])
-            if word.startswith(str):
+            if word.startswith(strg):
                 matched.append(item)
         return matched
 
@@ -53,7 +53,6 @@ class Dict():
                 print(self.define1(word[0])) # calls define method to 
 def main():
     myDict = Dict()
-    myDict.test()
-
+    myDict.dict()
 if __name__=="__main__":
     main()

@@ -1,7 +1,7 @@
 import tkinter as tk
 
 def writefile():
-    with open("/home/turi/git/dict/name.txt", "a+") as f:
+    with open("name.txt", "a+") as f:
         f.writelines(name.get())
         print("File has been written !")
         root.update()
